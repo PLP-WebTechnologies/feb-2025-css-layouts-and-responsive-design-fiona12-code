@@ -1,0 +1,96 @@
+body {
+  background-image: url("stethoscope.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: lightblue;
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.item:hover {
+  background-color: goldenrod;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+}
+
+a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.grid-one {
+  text-align: center;
+  padding: 20px;
+  background-color: lightblue;
+  color: #233142;
+  border-radius: 30px;
+}
+
+.grid-two {
+  text-align: center;
+  padding: 20px;
+  background-color: lightblue;
+  color: #233142;
+  border-radius: 30px;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: auto;
+  gap: 20px;
+  background-color: wheat;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+p {
+  line-height: 60px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 1400px) {
+  .grid-box {
+    width: 80%;
+    background-color: #680747;
+  }
+  body {
+    background-color: #e4f1fe;
+    background-image: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
